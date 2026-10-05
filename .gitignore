@@ -1,0 +1,26 @@
+node_modules/
+
+# Local/private configuration
+config.local.js
+.env
+.env.*
+!.env.example
+
+# Logs and runtime output
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backups / temporary files
+*.bak
+*.tmp
+*.temp
+*.cache
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

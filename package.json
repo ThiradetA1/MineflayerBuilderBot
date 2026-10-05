@@ -1,0 +1,17 @@
+{
+  "name": "mineflayer-builder-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-bot Mineflayer builder with owner-only controls, wall/stream modes, and automatic refills",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check builder.js && node --check config.js && node --check config.local.example.js && node --check scripts/patch-prismarine-physics.js && node --check node_modules/prismarine-physics/index.js",
+    "postinstall": "node scripts/patch-prismarine-physics.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.39.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "vec3": "^0.2.0"
+  }
+}
